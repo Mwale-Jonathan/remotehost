@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="gradient"></div>
+<h1>Welcome to <span class="fw-bold display-5">remoteHost</span>.</h1>
+<h1>Productive video meetings.</h1>
+<p class="fs-5 col-md-8">
+    Quickly and easily get started with remoteHost,
+    a productive base ready video meeting solution for all your video meeting needs. Below are
+    some basic helpful links to help you get started.
+    <!-- Download all our examples to get started. -->
+</p>
+<div class="mb-5">
+    <div class="d-flex flex-column flex-md-row gap-3">
+        <div class="col-12 col-md-4 col-lg-3">
+            <a href="#" class="btn btn-success btn px-4 mb-2 w-100">
+                <div class="d-flex align-items-center justify-content-center">
+                    <img src="{{ url_for('static', filename='img/logo_white.svg') }}" width="25" class="me-2" alt="logo">
+                    New Meeting...
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-md-6 my-0">
+            <div class="input-group mb-3 w-100">
+                <span class="input-group-text bg-blur border-end-0" id="basic-addon1">
+                    <img src="{{ url_for('static', filename='img/code.svg') }}" width="25" alt="code">
+                </span>
+                <input type="text" class="form-control bg-blur" placeholder="Enter code to join a meeting.." aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="col-3 col-md-2 mb-5">
+<div class="row g-5">
+    <div class="col-md-6">
+        <h2>Features</h2>
+        <p>
+            Ready to take productive vidoe meetings to the next level.
+            Checkout the features by clicking the link below.
+        </p>
+        <ul class="icon-list ps-0">
+            <li class="d-flex align-items-start mb-1">
+                <a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">
+                    remoteHost Features
+                </a>
+            </li>
+            <li class="text-muted d-flex align-items-start mb-1">
+                Focusdesk (coming soon!)
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <h2>Guides</h2>
+        <p>Read more detailed instructions and documentation on using remoteHost.</p>
+        <ul class="icon-list ps-0">
+            <li class="d-flex align-items-start mb-1">
+                <a href="/docs/5.2/getting-started/introduction/">
+                    How to use remoteHost for a quick meeting.
+                </a>
+            </li>
+            <li class="d-flex align-items-start mb-1">
+                <a href="/docs/5.2/getting-started/introduction/">
+                    How to use remoteHost for a scheduled meeting.
+                </a>
+            </li>
+            <li class="d-flex align-items-start mb-1">
+                <a href="/docs/5.2/getting-started/introduction/">
+                    How to use remoteHost for a one on one video call.
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endblock content %}
